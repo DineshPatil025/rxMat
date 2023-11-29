@@ -1,0 +1,14 @@
+.course-post{
+    width: 500px;
+    margin: 0 auto;
+    h3{
+        margin: 25px 0;
+    }
+   
+}
+
+::ng-deep{
+    .mat-tab-label{
+        flex-grow: 1;
+    }
+}
