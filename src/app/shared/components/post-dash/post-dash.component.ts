@@ -25,14 +25,9 @@ export class PostDashComponent implements OnInit {
     this._coursesService.getAllPosts()
       .subscribe(res => {
         this.coursesArr = res;
-        console.log(this.coursesArr);
         this.begcoursesArr = res.filter(res => res['category'] === "BEGINNER")
         this.advcoursesArr = res.filter(res => res['category'] === "ADVANCED")
-        console.log(this.advcoursesArr);
-        console.log(this.begcoursesArr);
-        
-
-
+   
       })
 
   }

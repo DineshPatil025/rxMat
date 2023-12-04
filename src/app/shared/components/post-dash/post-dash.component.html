@@ -1,9 +1,13 @@
 <div class="course-post">
     <h3>Courses</h3>
     <mat-tab-group class="tab-group">
+
         <mat-tab label="Beginner">
+
             <app-post-list [courseArr] = 'begcoursesArr'></app-post-list>
+
         </mat-tab>
+        
         <mat-tab label="Advance">
             <app-post-list [courseArr] = 'advcoursesArr'></app-post-list>
         </mat-tab>

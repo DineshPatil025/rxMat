@@ -1,0 +1,29 @@
+<!-- <p>{{patchCourse| json}}<p> -->
+<mat-dialog-content>
+<form [formGroup]="postForm">
+    <mat-form-field appearance="standard">
+        <mat-label>Description</mat-label>
+        <input formControlName = "description"  type="text" matInput placeholder="Description">
+    </mat-form-field>
+    
+    <mat-form-field  appearance="standard">
+        <mat-label>Long Description</mat-label>
+        <textarea formControlName = "longDescription"  type="text" matInput placeholder="longDescription"></textarea>
+    </mat-form-field>
+    
+    <mat-form-field appearance="standard">
+        <mat-label>Date</mat-label>
+        <input  type="text" matInput [matDatepicker]="datePicker" placeholder="longDescription">
+        <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+        <mat-datepicker #datePicker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field>
+    
+        <mat-select formControlName = "category">
+            <mat-option value="BEGINNER"> Beginner</mat-option>
+            <mat-option value="ADVANCED"> Advance</mat-option>
+        </mat-select>
+    
+    </mat-form-field>
+</form>
+</mat-dialog-content>

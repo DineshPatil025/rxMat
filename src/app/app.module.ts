@@ -8,19 +8,23 @@ import { MaterialModule } from './material/material.module';
 import { PostDashComponent } from './shared/components/post-dash/post-dash.component';
 import { PostListComponent } from './shared/components/post-list/post-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PostFormComponent } from './shared/components/post-form/post-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostDashComponent,
-    PostListComponent
+    PostListComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
